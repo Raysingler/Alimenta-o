@@ -1,0 +1,42 @@
+body{
+font-family: Arial;
+background:#f4f4f4;
+margin:40px;
+}
+
+h1{
+color:#2e7d32;
+}
+
+section{
+background:white;
+padding:20px;
+margin-top:20px;
+border-radius:10px;
+}
+
+nav{
+margin-bottom:20px;
+}
+
+nav a{
+margin-right:15px;
+text-decoration:none;
+color:#2e7d32;
+font-weight:bold;
+}
+nav{
+background:#2e7d32;
+padding:15px;
+border-radius:8px;
+}
+
+nav a{
+color:white;
+margin-right:20px;
+font-weight:bold;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
