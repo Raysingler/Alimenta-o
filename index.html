@@ -1,56 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-
 <head>
     <meta charset="UTF-8">
-    <title>Guia de Alimentação</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="bem-estar.ico" type="image/x-icon">
-    
+    <title>Cozinha Linda</title>
 
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
-        
-<body><header>  <h1>Guia de Alimentação</h1>
-       <p>Aprenda sobre a alimentação saudável e prejudicial</p></header> 
-       <nav>
-        <a href="#saudável">Alimentação Saudável</a></nav>
-       <nav>
-        <a href="#prejudicial">Alimentação Prejudicial</a></nav>
+<body>
 
+<header>
+    <h1>Cozinha Linda</h1>
+    <p>Sabor, elegância e saúde em cada prato</p>
+</header>
 
+<nav>
+    <a href="#saudavel">Saudável</a>
+    <a href="#prejudicial">Prejudicial</a>
+    <a href="#" onclick="irParaAleatorio()">Surpresa</a>
+</nav>
 
-<section id="saudável">
-       <h2>Alimentação saudável</h2>
-       
-       <p>Alimentos saudáveis ajudam o corpo a funcionar melhor e previnem doenças.</p>
-       <ul>
-        <li>Frutas</li>
-        <li>Legumes</li>
-        <li>Verduras</li>
+<section id="saudavel">
+    <h2>🍎 Alimentação Saudável</h2>
+    <p>Alimentos saudáveis ajudam o corpo a funcionar melhor e previnem doenças.</p>
+
+    <ul>
+        <li>Frutas frescas</li>
+        <li>Legumes naturais</li>
+        <li>Verduras orgânicas</li>
         <li>Grãos integrais</li>
         <li>Proteínas magras</li>
-       </ul>
-    </section>
+    </ul>
+</section>
 
+<section id="prejudicial">
+    <h2>🍔 Alimentação Prejudicial</h2>
+    <p>Alguns alimentos, quando consumidos em excesso, podem prejudicar a saúde.</p>
 
+    <ul>
+        <li>Refrigerantes</li>
+        <li>Fast food</li>
+        <li>Doces em excesso</li>
+        <li>Ultraprocessados</li>
+        <li>Comidas gordurosas</li>
+    </ul>
+</section>
 
+<footer>
+    <p>© 2026 Cozinha Linda</p>
+</footer>
 
-    <section id="prejudicial">
-       <h2>Alimentação Prejudicial</h2>
+<!-- SCRIPT DA ALEATORIEDADE -->
+<script>
+function irParaAleatorio() {
+    var secoes = ["saudavel", "prejudicial"];
+    var random = Math.floor(Math.random() * secoes.length);
 
-       <p>Alguns alimentos, quando consumidos em excesso, podem prejudicar a saúde.</p>
-
-       <ul>
-       <li>Refrigerantes</li>
-       <li>Fast food</li>
-       <li>Doces em excesso</li>
-       <li>Alimentos ultraprocessados</li>
-       <li>Comidas muito gordurosas</li>
-       </ul>
-    </section>
+    window.location.href = "#" + secoes[random];
+}
+</script>
 
 </body>
-
 </html>
